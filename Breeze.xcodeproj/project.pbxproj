@@ -35,6 +35,82 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F982EF2F2AC6CF670041045B /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		F982EF302AC6CF6D0041045B /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F9FE63492AC6C16D00280219 /* AppDelegate.swift */,
+				F9FE634B2AC6C16E00280219 /* SceneDelegate.swift */,
+				F9FE63542AC6C16F00280219 /* LaunchScreen.storyboard */,
+				F9FE63572AC6C16F00280219 /* Info.plist */,
+				F9FE63522AC6C16F00280219 /* Assets.xcassets */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		F982EF312AC6CF740041045B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F982EF322AC6CF7C0041045B /* Ultilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Ultilities;
+			sourceTree = "<group>";
+		};
+		F982EF332AC6CF870041045B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F982EF342AC6CF8D0041045B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F982EF352AC6CF960041045B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F982EF362AC6CF9C0041045B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F9FE634D2AC6C16E00280219 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F982EF372AC6CFA20041045B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F982EF382AC6CFAA0041045B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		F9FE633D2AC6C16D00280219 = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +130,16 @@
 		F9FE63482AC6C16D00280219 /* Breeze */ = {
 			isa = PBXGroup;
 			children = (
-				F9FE63492AC6C16D00280219 /* AppDelegate.swift */,
-				F9FE634B2AC6C16E00280219 /* SceneDelegate.swift */,
-				F9FE634D2AC6C16E00280219 /* ViewController.swift */,
-				F9FE63522AC6C16F00280219 /* Assets.xcassets */,
-				F9FE63542AC6C16F00280219 /* LaunchScreen.storyboard */,
-				F9FE63572AC6C16F00280219 /* Info.plist */,
+				F982EF382AC6CFAA0041045B /* Models */,
+				F982EF372AC6CFA20041045B /* Views */,
+				F982EF362AC6CF9C0041045B /* ViewControllers */,
+				F982EF352AC6CF960041045B /* ViewModels */,
+				F982EF342AC6CF8D0041045B /* Services */,
+				F982EF332AC6CF870041045B /* Extensions */,
+				F982EF322AC6CF7C0041045B /* Ultilities */,
+				F982EF312AC6CF740041045B /* Resources */,
+				F982EF302AC6CF6D0041045B /* SupportingFiles */,
+				F982EF2F2AC6CF670041045B /* Coordinators */,
 			);
 			path = Breeze;
 			sourceTree = "<group>";
@@ -282,7 +362,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 53FDVL354X;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Breeze/Info.plist;
+				INFOPLIST_FILE = Breeze/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -309,7 +389,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 53FDVL354X;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Breeze/Info.plist;
+				INFOPLIST_FILE = Breeze/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
