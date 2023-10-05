@@ -11,6 +11,10 @@
 		F982EF3A2AC6D2AA0041045B /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F982EF392AC6D2AA0041045B /* AppColors.swift */; };
 		F982EF3C2AC6D2E30041045B /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F982EF3B2AC6D2E30041045B /* UIColor+Extensions.swift */; };
 		F9D2221F2ACEAF70006C4CB8 /* CurrentWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D2221E2ACEAF70006C4CB8 /* CurrentWeatherModel.swift */; };
+		F9D222212ACEB4F1006C4CB8 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D222202ACEB4F1006C4CB8 /* CoordinatorProtocol.swift */; };
+		F9D222232ACEB566006C4CB8 /* WeatherCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D222222ACEB566006C4CB8 /* WeatherCoordinator.swift */; };
+		F9D222252ACEB5B0006C4CB8 /* MapsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D222242ACEB5B0006C4CB8 /* MapsCoordinator.swift */; };
+		F9D222272ACEB5E3006C4CB8 /* LocationsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D222262ACEB5E3006C4CB8 /* LocationsCoordinator.swift */; };
 		F9FE634A2AC6C16D00280219 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FE63492AC6C16D00280219 /* AppDelegate.swift */; };
 		F9FE634C2AC6C16E00280219 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FE634B2AC6C16E00280219 /* SceneDelegate.swift */; };
 		F9FE634E2AC6C16E00280219 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FE634D2AC6C16E00280219 /* ViewController.swift */; };
@@ -25,6 +29,10 @@
 		F982EF392AC6D2AA0041045B /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		F982EF3B2AC6D2E30041045B /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		F9D2221E2ACEAF70006C4CB8 /* CurrentWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherModel.swift; sourceTree = "<group>"; };
+		F9D222202ACEB4F1006C4CB8 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		F9D222222ACEB566006C4CB8 /* WeatherCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCoordinator.swift; sourceTree = "<group>"; };
+		F9D222242ACEB5B0006C4CB8 /* MapsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsCoordinator.swift; sourceTree = "<group>"; };
+		F9D222262ACEB5E3006C4CB8 /* LocationsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsCoordinator.swift; sourceTree = "<group>"; };
 		F9FE63462AC6C16D00280219 /* Breeze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Breeze.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9FE63492AC6C16D00280219 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9FE634B2AC6C16E00280219 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +74,10 @@
 		F982EF2F2AC6CF670041045B /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				F9D222202ACEB4F1006C4CB8 /* CoordinatorProtocol.swift */,
+				F9D222222ACEB566006C4CB8 /* WeatherCoordinator.swift */,
+				F9D222242ACEB5B0006C4CB8 /* MapsCoordinator.swift */,
+				F9D222262ACEB5E3006C4CB8 /* LocationsCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -291,12 +303,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9D222212ACEB4F1006C4CB8 /* CoordinatorProtocol.swift in Sources */,
 				F9FE634E2AC6C16E00280219 /* ViewController.swift in Sources */,
 				F982EF3C2AC6D2E30041045B /* UIColor+Extensions.swift in Sources */,
 				F9D2221F2ACEAF70006C4CB8 /* CurrentWeatherModel.swift in Sources */,
 				F982EF3A2AC6D2AA0041045B /* AppColors.swift in Sources */,
 				F9FE634A2AC6C16D00280219 /* AppDelegate.swift in Sources */,
 				F9FE634C2AC6C16E00280219 /* SceneDelegate.swift in Sources */,
+				F9D222232ACEB566006C4CB8 /* WeatherCoordinator.swift in Sources */,
+				F9D222252ACEB5B0006C4CB8 /* MapsCoordinator.swift in Sources */,
+				F9D222272ACEB5E3006C4CB8 /* LocationsCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
