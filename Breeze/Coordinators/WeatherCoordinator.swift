@@ -18,6 +18,9 @@ class WeatherCoordinator: Coordinator {
     }
     
     func start() {
-        
+        let weatherVC = WeatherViewController()
+        weatherVC.tabBarItem = UITabBarItem(title: "Weather", image: UIImage(systemName: "sun.min.fill"), tag: 0)
+        weatherVC.coordinator = self
+        navigationController.pushViewController(weatherVC, animated: false)
     }
 }

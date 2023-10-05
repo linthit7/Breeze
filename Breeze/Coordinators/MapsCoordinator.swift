@@ -18,6 +18,9 @@ class MapsCoordinator: Coordinator {
     }
     
     func start() {
-        
+        let mapsVC = MapsViewController()
+        mapsVC.tabBarItem = UITabBarItem(title: "Maps", image: UIImage(systemName: "globe"), tag: 1)
+        mapsVC.coordinator = self
+        navigationController.pushViewController(mapsVC, animated: false)
     }
 }
