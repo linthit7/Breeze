@@ -19,7 +19,9 @@ class MapsCoordinator: Coordinator {
     
     func start() {
         let mapsVC = MapsViewController()
-        mapsVC.tabBarItem = UITabBarItem(title: "Maps", image: UIImage(systemName: "globe"), tag: 1)
+        mapsVC.tabBarItem = UITabBarItem(title: "Maps", image: UIImage(systemName: "globe.asia.australia"), tag: 1)
+        mapsVC.tabBarItem.image = UIImage(systemName: "globe.asia.australia")
+        mapsVC.tabBarItem.selectedImage = UIImage(systemName: "globe.asia.australia.fill")
         mapsVC.coordinator = self
         navigationController.pushViewController(mapsVC, animated: false)
     }

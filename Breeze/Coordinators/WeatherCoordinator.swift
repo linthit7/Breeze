@@ -18,8 +18,13 @@ class WeatherCoordinator: Coordinator {
     }
     
     func start() {
+        let weatherService = WeatherAPIService()
+        let weatherViewModel = WeatherViewControllerViewModel(weatherService: weatherService)
         let weatherVC = WeatherViewController()
-        weatherVC.tabBarItem = UITabBarItem(title: "Weather", image: UIImage(systemName: "sun.min.fill"), tag: 0)
+        weatherVC.viewModel = weatherViewModel
+        weatherVC.tabBarItem = UITabBarItem(title: "Weather", image: UIImage(systemName: "sun.max.fill"), tag: 0)
+        weatherVC.tabBarItem.image = UIImage(systemName: "sun.max")
+        weatherVC.tabBarItem.selectedImage = UIImage(systemName: "sun.max.fill")
         weatherVC.coordinator = self
         navigationController.pushViewController(weatherVC, animated: false)
     }

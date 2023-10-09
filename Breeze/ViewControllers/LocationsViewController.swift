@@ -16,6 +16,8 @@ class LocationsViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         title = "Locations"
+        view.backgroundColor = AppColors.primaryBackgroundColor
+
     }
 
 

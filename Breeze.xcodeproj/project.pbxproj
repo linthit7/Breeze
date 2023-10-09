@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		309F30D5E97529E01AB52609 /* Pods_Breeze.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A27B6F9129DF48E8E3277CE /* Pods_Breeze.framework */; };
+		F955244F2ACFF2A90036063D /* WeatherServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F955244E2ACFF2A90036063D /* WeatherServiceProtocol.swift */; };
+		F95524522ACFF4580036063D /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95524512ACFF4580036063D /* APIError.swift */; };
+		F95524542ACFF6370036063D /* WeatherAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95524532ACFF6370036063D /* WeatherAPIService.swift */; };
+		F97CBB422AD3B5AD0034EED5 /* HomeWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97CBB412AD3B5AD0034EED5 /* HomeWeatherViewModel.swift */; };
+		F97CBB442AD3E2010034EED5 /* WeatherViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97CBB432AD3E2010034EED5 /* WeatherViewControllerViewModel.swift */; };
+		F97CBB462AD400200034EED5 /* URLUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97CBB452AD400200034EED5 /* URLUtilities.swift */; };
 		F982EF3A2AC6D2AA0041045B /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F982EF392AC6D2AA0041045B /* AppColors.swift */; };
 		F982EF3C2AC6D2E30041045B /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F982EF3B2AC6D2E30041045B /* UIColor+Extensions.swift */; };
 		F9D2221F2ACEAF70006C4CB8 /* CurrentWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D2221E2ACEAF70006C4CB8 /* CurrentWeatherModel.swift */; };
@@ -32,6 +38,12 @@
 		78C926B1B538D1E08284C4D3 /* Pods-Breeze.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Breeze.release.xcconfig"; path = "Target Support Files/Pods-Breeze/Pods-Breeze.release.xcconfig"; sourceTree = "<group>"; };
 		9A27B6F9129DF48E8E3277CE /* Pods_Breeze.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Breeze.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5D32063352ECFCB7A73DCF7 /* Pods-Breeze.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Breeze.debug.xcconfig"; path = "Target Support Files/Pods-Breeze/Pods-Breeze.debug.xcconfig"; sourceTree = "<group>"; };
+		F955244E2ACFF2A90036063D /* WeatherServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServiceProtocol.swift; sourceTree = "<group>"; };
+		F95524512ACFF4580036063D /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		F95524532ACFF6370036063D /* WeatherAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPIService.swift; sourceTree = "<group>"; };
+		F97CBB412AD3B5AD0034EED5 /* HomeWeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWeatherViewModel.swift; sourceTree = "<group>"; };
+		F97CBB432AD3E2010034EED5 /* WeatherViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewControllerViewModel.swift; sourceTree = "<group>"; };
+		F97CBB452AD400200034EED5 /* URLUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLUtilities.swift; sourceTree = "<group>"; };
 		F982EF392AC6D2AA0041045B /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		F982EF3B2AC6D2E30041045B /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		F9D2221E2ACEAF70006C4CB8 /* CurrentWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherModel.swift; sourceTree = "<group>"; };
@@ -83,6 +95,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F95524502ACFF4470036063D /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				F95524512ACFF4580036063D /* APIError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
 		F982EF2F2AC6CF670041045B /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,7 +121,6 @@
 				F9FE634B2AC6C16E00280219 /* SceneDelegate.swift */,
 				F9FE63542AC6C16F00280219 /* LaunchScreen.storyboard */,
 				F9FE63572AC6C16F00280219 /* Info.plist */,
-				F9FE63522AC6C16F00280219 /* Assets.xcassets */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -109,6 +128,7 @@
 		F982EF312AC6CF740041045B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F9FE63522AC6C16F00280219 /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -117,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				F982EF392AC6D2AA0041045B /* AppColors.swift */,
+				F97CBB452AD400200034EED5 /* URLUtilities.swift */,
 			);
 			path = Ultilities;
 			sourceTree = "<group>";
@@ -132,6 +153,8 @@
 		F982EF342AC6CF8D0041045B /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				F955244E2ACFF2A90036063D /* WeatherServiceProtocol.swift */,
+				F95524532ACFF6370036063D /* WeatherAPIService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -139,6 +162,8 @@
 		F982EF352AC6CF960041045B /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				F97CBB412AD3B5AD0034EED5 /* HomeWeatherViewModel.swift */,
+				F97CBB432AD3E2010034EED5 /* WeatherViewControllerViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -193,6 +218,7 @@
 		F9FE63482AC6C16D00280219 /* Breeze */ = {
 			isa = PBXGroup;
 			children = (
+				F95524502ACFF4470036063D /* Errors */,
 				F982EF382AC6CFAA0041045B /* Models */,
 				F982EF372AC6CFA20041045B /* Views */,
 				F982EF362AC6CF9C0041045B /* ViewControllers */,
@@ -324,17 +350,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F955244F2ACFF2A90036063D /* WeatherServiceProtocol.swift in Sources */,
 				F9D222212ACEB4F1006C4CB8 /* CoordinatorProtocol.swift in Sources */,
 				F9D222392ACEBEAE006C4CB8 /* MainViewController.swift in Sources */,
 				F982EF3C2AC6D2E30041045B /* UIColor+Extensions.swift in Sources */,
 				F9D222322ACEBBAE006C4CB8 /* MapsViewController.swift in Sources */,
+				F95524522ACFF4580036063D /* APIError.swift in Sources */,
 				F9D2221F2ACEAF70006C4CB8 /* CurrentWeatherModel.swift in Sources */,
 				F982EF3A2AC6D2AA0041045B /* AppColors.swift in Sources */,
+				F97CBB442AD3E2010034EED5 /* WeatherViewControllerViewModel.swift in Sources */,
 				F9FE634A2AC6C16D00280219 /* AppDelegate.swift in Sources */,
 				F9FE634C2AC6C16E00280219 /* SceneDelegate.swift in Sources */,
 				F9D222362ACEBBCE006C4CB8 /* LocationsViewController.swift in Sources */,
+				F97CBB462AD400200034EED5 /* URLUtilities.swift in Sources */,
+				F97CBB422AD3B5AD0034EED5 /* HomeWeatherViewModel.swift in Sources */,
 				F9D222232ACEB566006C4CB8 /* WeatherCoordinator.swift in Sources */,
 				F9D222252ACEB5B0006C4CB8 /* MapsCoordinator.swift in Sources */,
+				F95524542ACFF6370036063D /* WeatherAPIService.swift in Sources */,
 				F9D222272ACEB5E3006C4CB8 /* LocationsCoordinator.swift in Sources */,
 				F9D2222E2ACEBB5D006C4CB8 /* WeatherViewController.swift in Sources */,
 			);

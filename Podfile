@@ -4,9 +4,10 @@
 target 'Breeze' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
+  
   # Pods for Breeze
-
-    pod 'SwiftyJSON'
-
+  
+  pod 'SwiftyJSON'
+  pod 'Alamofire'
+  
 end

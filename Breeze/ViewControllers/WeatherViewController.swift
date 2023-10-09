@@ -11,22 +11,28 @@ class WeatherViewController: UIViewController {
 
     weak var coordinator: WeatherCoordinator?
     
+    var viewModel: WeatherViewControllerViewModel!
+    
+    @IBOutlet weak var cityNameLabel: UILabel!
+    @IBOutlet weak var weatherIconImageView: UIImageView!
+    @IBOutlet weak var weatherTempLabel: UILabel!
+    @IBOutlet weak var feelsLikeTempLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
         title = "Weather"
+        view.backgroundColor = AppColors.primaryBackgroundColor
+        
+        viewModel.fetchWeather(for: "Myanmar") {
+            print(self.viewModel.homeWeatherViewModel)
+            DispatchQueue.main.async {
+                self.cityNameLabel.text = self.viewModel.homeWeatherViewModel?.name
+                self.weatherIconImageView.image = self.viewModel.homeWeatherViewModel?.icon
+                self.weatherTempLabel.text = self.viewModel.homeWeatherViewModel?.temp_c
+                self.feelsLikeTempLabel.text = self.viewModel.homeWeatherViewModel?.feelslike_c
+            }
+        }
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

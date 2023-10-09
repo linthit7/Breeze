@@ -16,6 +16,8 @@ class MapsViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         title = "Maps"
+        view.backgroundColor = AppColors.primaryBackgroundColor
+
     }
 
 

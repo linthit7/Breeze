@@ -19,7 +19,9 @@ class LocationsCoordinator: Coordinator {
     
     func start() {
         let locationsVC = LocationsViewController()
-        locationsVC.tabBarItem = UITabBarItem(title: "Locations", image: UIImage(systemName: "location.fill"), tag: 2)
+        locationsVC.tabBarItem = UITabBarItem(title: "Locations", image: UIImage(systemName: "location"), tag: 2)
+        locationsVC.tabBarItem.image = UIImage(systemName: "location")
+        locationsVC.tabBarItem.selectedImage = UIImage(systemName: "location.fill")
         locationsVC.coordinator = self
         navigationController.pushViewController(locationsVC, animated: false)
     }
