@@ -24,8 +24,7 @@ class WeatherViewController: UIViewController {
         title = "Weather"
         view.backgroundColor = AppColors.primaryBackgroundColor
         
-        viewModel.fetchWeather(for: "Myanmar") {
-            print(self.viewModel.homeWeatherViewModel)
+        viewModel.fetchWeather(for: "Bago") {
             DispatchQueue.main.async {
                 self.cityNameLabel.text = self.viewModel.homeWeatherViewModel?.name
                 self.weatherIconImageView.image = self.viewModel.homeWeatherViewModel?.icon

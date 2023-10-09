@@ -23,7 +23,7 @@ class MainViewController: UITabBarController {
         locationsCoordinator.start()
         viewControllers = [weatherCoordinator.navigationController, mapsCoordinator.navigationController, locationsCoordinator.navigationController]
         tabBar.layer.borderWidth = 0.5
-        tabBar.layer.borderColor = AppColors.opaqueSeparatorColor?.cgColor
+        tabBar.layer.borderColor = AppColors.opaqueSeparatorColor.cgColor
         tabBar.backgroundColor = AppColors.primaryBackgroundColor
         tabBar.tintColor = AppColors.secondaryColor
     }

@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 extension UIColor {
-
+    
     /// Initialize UIColor using hex string and an optional alpha value
     /// - Parameters:
     ///   - hex: A hex string, must be formatted as 'RRGGBB'
@@ -23,5 +23,16 @@ extension UIColor {
         
         self.init(red: red, green: green, blue: blue, alpha: alpha)
     }
+    
+        static func dynamicColor(light: UIColor?, dark: UIColor?) -> UIColor {
+            return UIColor { traitCollection in
+                switch traitCollection.userInterfaceStyle {
+                case .dark:
+                    return dark ?? light ?? UIColor.clear
+                default:
+                    return light ?? UIColor.clear
+                }
+            }
+        }
 }
 
