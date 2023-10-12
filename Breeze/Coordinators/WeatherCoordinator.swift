@@ -19,7 +19,8 @@ class WeatherCoordinator: Coordinator {
     
     func start() {
         let weatherService = WeatherAPIService()
-        let weatherViewModel = WeatherViewControllerViewModel(weatherService: weatherService)
+        let locationService = LocationService()
+        let weatherViewModel = WeatherViewControllerViewModel(weatherService: weatherService, locationService: locationService)
         let weatherVC = WeatherViewController()
         weatherVC.viewModel = weatherViewModel
         weatherVC.tabBarItem = UITabBarItem(title: "Weather", image: UIImage(systemName: "sun.max.fill"), tag: 0)

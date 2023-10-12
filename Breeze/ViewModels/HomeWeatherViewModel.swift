@@ -17,8 +17,8 @@ struct HomeWeatherViewModel {
     
     init(currentWeather: CurrentWeather) {
         self.name = currentWeather.location.name
-        self.temp_c = String(currentWeather.current.temp_c)
-        self.feelslike_c = "Feels like \(currentWeather.current.feelslike_c)"
+        self.temp_c = "\(currentWeather.current.temp_c)°C"
+        self.feelslike_c = "Feels like \(currentWeather.current.feelslike_c)°C"
         self.icon = UIImage(named: URLUtilities.extractWeatherIconPath(from: currentWeather.current.condition.icon)!)!
     }
 }
