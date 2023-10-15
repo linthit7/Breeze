@@ -16,7 +16,6 @@ class WeatherViewControllerViewModel {
     private var locationService: LocationService
     var homeWeatherViewModel: HomeWeatherViewModel?
     var error: APIError?
-    var completedRequest = 0
 
     init(weatherService: WeatherServiceProtocol, locationService: LocationService) {
         self.weatherService = weatherService
@@ -48,7 +47,6 @@ extension WeatherViewControllerViewModel: LocationServiceDelegate {
             case .success(let weather):
                 self?.homeWeatherViewModel = HomeWeatherViewModel(currentWeather: weather)
                 self?.delegate?.didFetchWeatherWithCurrentLocation()
-                self?.completedRequest += 1
             case .failure(let error):
                 self?.error = error
                 self?.delegate?.didFailFetchWeatherWithCurrentLocation()

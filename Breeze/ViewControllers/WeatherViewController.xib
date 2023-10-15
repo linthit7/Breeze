@@ -59,7 +59,7 @@
                     </constraints>
                 </view>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="6uq-Ly-aTX">
-                    <rect key="frame" x="0.0" y="348.66666666666674" width="375" height="429.33333333333326"/>
+                    <rect key="frame" x="0.0" y="340.66666666666674" width="375" height="437.33333333333326"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="nbq-nd-zkc">
                         <size key="itemSize" width="128" height="128"/>
@@ -81,13 +81,13 @@
                 <constraint firstAttribute="trailing" secondItem="CZl-aX-Lix" secondAttribute="trailing" id="RY9-Wk-mj6"/>
                 <constraint firstItem="6uq-Ly-aTX" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="UtR-qS-XiV"/>
                 <constraint firstItem="CZl-aX-Lix" firstAttribute="top" secondItem="cEJ-Ki-L0m" secondAttribute="bottom" constant="72" id="ZnE-1i-zqk"/>
+                <constraint firstItem="6uq-Ly-aTX" firstAttribute="top" secondItem="CZl-aX-Lix" secondAttribute="bottom" id="dvf-CR-vie"/>
                 <constraint firstItem="rad-gm-SsT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="lEQ-Tz-3wo"/>
                 <constraint firstItem="cEJ-Ki-L0m" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="80" id="ltL-F7-GT2"/>
                 <constraint firstItem="rad-gm-SsT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="36" id="mqb-su-Tm8"/>
                 <constraint firstItem="cEJ-Ki-L0m" firstAttribute="top" secondItem="rad-gm-SsT" secondAttribute="bottom" constant="36" id="rOt-Iy-G2t"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kuy-g3-iWe" secondAttribute="trailing" constant="60" id="uYg-BX-rUm"/>
                 <constraint firstItem="chv-hr-C4W" firstAttribute="top" secondItem="kuy-g3-iWe" secondAttribute="bottom" constant="8" symbolic="YES" id="wJL-M3-EEj"/>
-                <constraint firstItem="6uq-Ly-aTX" firstAttribute="top" secondItem="CZl-aX-Lix" secondAttribute="bottom" constant="8.3300000000000001" id="wtv-w2-PHn"/>
                 <constraint firstItem="6uq-Ly-aTX" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="yNd-XK-mX3"/>
             </constraints>
             <point key="canvasLocation" x="132" y="-12.561576354679804"/>
